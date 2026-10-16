@@ -3,9 +3,16 @@
 #include <stdio.h>
 #include <math.h>
 
+int main()
+{
+    setlocale(LC_ALL, "RUS");
+    zad1();
+    zad2();
+    zad3();
+}
+
 int zad1() 
 {
-	setlocale(LC_ALL, "RUS");
     char   c = '!';
     int    i = 2;
     float  f = 3.14f;
@@ -55,9 +62,8 @@ int zad1()
     //задача 1в
     int u;
     printf("введите целое число:");
-    puts;
     scanf(" %d", &u);
-    printf("1/%d = %f\n\n\n", i, 1.0/u);
+    printf("1/%d = %f\n\n\n", u, 1.0 / u);
 }
 
 int zad2()
@@ -91,11 +97,4 @@ int zad3()
     int sum = first + mid + last;
     int rev = last * 100 + mid * 10 + first;
     printf("последняя цифра %d, первая - %d, сумма цифр %d, число наоборот %d\n",last, first, sum, rev);
-}
-
-int main()
-{
-	zad1();
-    zad2();
-    zad3();
 }

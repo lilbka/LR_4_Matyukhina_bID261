@@ -24,5 +24,14 @@ int main() //вариант 18
     printf("b = %d, остаток b = %d\n", b, ostB);
     printf("c = %d, остаток c = %d\n", c, ostC);
     printf("сумма остатков = %d\n", s);
+    int result = allnumb(a, b, c);
     printf("гипотеза подтверждается, если сумма остатков = 0. в ином случае - гипотеза не подтверждена.\n");
+    printf("результат: %d\n", result);
+
+    return 0;
+}
+
+int allnumb(int a, int b, int c)
+{
+    return (a % 3 == 0) && (b % 3 == 0) && (c % 3 == 0);
 }
